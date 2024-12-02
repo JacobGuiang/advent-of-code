@@ -1,5 +1,8 @@
-input = open("input.txt", "r")
-output = open("output.txt", "w")
+import os
+
+dir = os.path.dirname(os.path.abspath(__file__))
+input = open(os.path.join(dir, "input.txt"), "r")
+output = open(os.path.join(dir, "output.txt"), "w")
 
 
 def solve1():
